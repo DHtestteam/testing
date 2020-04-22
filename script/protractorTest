@@ -1,2 +1,2 @@
 #!/bin/sh
-./node_modules/.bin/protractor conf.js
+protractor conf.js
