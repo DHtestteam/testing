@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="1.614">
+ <testsuite name="Protractor Demo" timestamp="2020-04-22T14:08:50" hostname="localhost" time="1.614" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Protractor Demo" name="to check the page title" time="1.613" />
+ </testsuite>
+</testsuites>
