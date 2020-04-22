@@ -1,0 +1,29 @@
+{
+  "name": "poractorprojet",
+  "version": "1.0.0",
+  "description": "End to End protractor for my Application",
+  "main": "conf.js",
+  "dependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@types/node": "^13.13.2",
+    "jasmine": "^3.5.0",
+    "jasmine-reporters": "2.3.2",
+    "protractor": "^5.4.3",
+    "webdriver-manager": "12.1.7",
+    "chromedriver": "80.0.2"
+  },
+  "bin": {
+    "protractor": "bin/protractor",
+    "webdriver-manager": "bin/webdriver-manager"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "na"
+  },
+  "author": "test Egnineer",
+  "license": "ISC"
+}
