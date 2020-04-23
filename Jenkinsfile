@@ -6,8 +6,6 @@ pipeline {
         {
             steps {
                 sh 'npm --version'
-                sh 'npm istall'
-                sh 'protractor conf.js'
                    }
         }
 }
