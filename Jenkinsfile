@@ -1,13 +1,14 @@
 Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent any
+    agent { docker { image 'node:10.16.0' } }
     stages {
-        stage('Test') {
+        stage('build') {
             steps {
-                sh 'echo "Fail!"; exit 1'
+                sh 'npm --version'
             }
         }
     }
+}
     post {
         always {
             junit 'build/reports/**/*.xml'
