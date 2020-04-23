@@ -9,8 +9,7 @@
     "jasmine": "^3.5.0",
     "jasmine-reporters": "2.3.2",
     "protractor": "^5.4.3",
-    "webdriver-manager": "12.1.7",
-    "chromedriver": "80.0.2"
+    "webdriver-manager": "12.1.7"
   },
   "bin": {
     "protractor": "bin/protractor",
