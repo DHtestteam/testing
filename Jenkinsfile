@@ -1,9 +1,11 @@
 pipeline {
-    agent { docker { image 'node:6.3' } }
+    agent { docker { image 'node:10.16.0' } }
     stages {
         stage('Test') {
             steps {
-                sh 'npm --version'
+                sh 'npm install'
+                sh 'node --version'
+                sh 'protractor conf.js'
             }
         }
     }
