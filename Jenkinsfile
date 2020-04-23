@@ -2,12 +2,14 @@ Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent { docker { image 'node:10.16.0' } }
     stages {
-        stage('build') {
+        stage('build') 
+        {
             steps {
                 sh 'npm --version'
-            }
+                sh 'npm istall'
+                sh 'protractor conf.js'
+                   }
         }
-    }
 }
     post {
         always {
