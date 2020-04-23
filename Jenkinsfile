@@ -7,9 +7,9 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'node --version'
-                sh 'npm install'
-                sh './node_modules/protractor/bin/webdriver-manager update'
-                sh './node_modules/.bin/protractor conf.js'
+                sh 'npm install --slient'
+                sh 'npm install protractor -g'
+                sh 'protractor conf.js'
             }
         }
     }
