@@ -1,14 +1,22 @@
 pipeline {
-    agent { docker { image 'node:10.16.0' } }
+    agent { docker { image 'node:latest' } }
     environment {
         HOME = '.'
     }
+    node {
+            withCredentials([usernameColonPassword(credentialsId: 'DHtestteam', variable: 'Guilin$9017')]) {
+            sh '''
+                set +x
+                curl -u "$USERPASS" https://gitbub.com/DHtestteam/ > output
+                '''
+            }
+        }
     stages {
         stage('Test') {
             steps {
                 sh 'node --version'
                 sh 'npm install --slient'
-                sh 'sudo npm install -g protractor'
+                sh 'npm install -g protractor'
                 sh 'protractor ./conf.js'
             }
         }
