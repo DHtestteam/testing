@@ -8,7 +8,8 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'npm install --slient'
-                sh 'npm uninstall -g chromedriver'
+                sh 'wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \'
+                sh 'apt-get update && apt-get install -y google-chrome-stable'
                 sh 'npm install -g chromedriver'
                 sh './node_modules/.bin/protractor conf.js'
             }
