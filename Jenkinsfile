@@ -8,8 +8,6 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'npm install --slient'
-                sh './node_modules/protractor/bin/webdriver-manager update'
-                sh './node_modules/protractor/bin/webdriver-manager start'
                 sh './node_modules/.bin/protractor conf.js'
             }
         }
