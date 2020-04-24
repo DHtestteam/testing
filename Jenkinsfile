@@ -8,6 +8,7 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'npm install --slient'
+                sh 'npm uninstall chromedriver'
                 sh 'npm install chromedriver'
                 sh './node_modules/.bin/protractor conf.js'
             }
