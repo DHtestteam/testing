@@ -8,7 +8,7 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'npm install --slient'
-                sh './node_modules/.bin/protractor conf.js'
+                sh 'protractor conf.js'
             }
         }
     }
