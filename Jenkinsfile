@@ -10,7 +10,7 @@ pipeline {
                 sh 'npm install'
                 sh 'npm run webdriver-update'
                 sh 'npm test'
-                sh 'cat .reports/json/cucumber_report.json | ./node_modules/.bin/cucumber-junit > cucumber_report.xml'
+                sh 'cat .reports/json/cucumber_report.json | ./node_modules/.bin/cucumber-junit > .reports/cucumber_report.xml'
             }
         }
     }
